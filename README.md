@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Introduction
 
-I've never been really satisfied with the random prompt generators online(most of them are centered around *making* a character rather than what they might be doing) so I decided to make one myself.
+I've never really been satisfied with the random prompt generators I found online(most of them are centered around *making* a character rather than what an already-existing character might be doing) so I decided to make one myself.
