@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
 import axios from 'axios'
+import RandomWord from '@/components/RandomWord'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,16 +14,8 @@ export default function Home() {
   const [verb, setVerb] = useState('')
   const [location, setLocation] = useState('')
   const [prompt, setPrompt] = useState('')
-  const [oneRandomWord, setOneRandomWord] = useState('')
 
   // API calls to the random word and dictionary APIs will happen only after a button press, so no need for a useEffect yet
-
-  const handleOneWordPrompt = async () => {
-    // For those who just want one random word to build a prompt around
-    const randomWord = await axios.get('https://random-word-api.vercel.app/api?words=1')
-    console.log(randomWord.data[0])
-    setOneRandomWord(randomWord.data[0])
-  }
 
   const handlePrompt = async () => {
     // This will fire off the API calls, first to the random word API(for one noun and one verb) then the dictionary API. The dictionary API will help with the proper usage of the word.
@@ -42,8 +35,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <h2>Prompts go here</h2>
-        {oneRandomWord}
-        <button onClick={() => handleOneWordPrompt()}>Single Word Prompt</button>
+        <RandomWord />
         <button onClick={() => handlePrompt()}>Generate Prompt</button>
       </main>
     </>
