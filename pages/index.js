@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
 import axios from 'axios'
 import RandomWord from '@/components/RandomWord'
+import RomancePrompt from '@/components/RomancePrompt'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,6 +37,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <h2>Prompts go here</h2>
         <RandomWord />
+        <RomancePrompt />
         <button onClick={() => handlePrompt()}>Generate Prompt</button>
       </main>
     </>

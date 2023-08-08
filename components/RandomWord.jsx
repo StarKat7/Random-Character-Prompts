@@ -12,12 +12,12 @@ export default function RandomWord() {
     }
 
     return (
-        <>
-        Random Word Component Here
         <div>
-            <div>{oneRandomWord}</div>
-            <button onClick={() => handleOneWordPrompt()}>Single Word Prompt</button>
+            Random Word Component Here
+            <div>
+                <div>{oneRandomWord}</div>
+                <button onClick={() => handleOneWordPrompt()}>Single Word Prompt</button>
+            </div>
         </div>
-        </>
     )
 }
