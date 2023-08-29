@@ -11,7 +11,7 @@ export default function RomancePrompt() {
     }
 
     return (
-        <div>
+        <div className="component">
             Romance Prompt Here
             <div><div>{prompt}</div>
             <button onClick={() => handleRomancePrompt()}>Get Romance Prompt</button>

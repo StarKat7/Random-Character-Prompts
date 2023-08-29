@@ -12,7 +12,7 @@ export default function RandomWord() {
     }
 
     return (
-        <div>
+        <div className="component">
             Random Word Component Here
             <div>
                 <div>{oneRandomWord}</div>
