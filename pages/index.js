@@ -36,10 +36,10 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className='components'>
-        <h2>Prompts go here</h2>
+        <h2>Character Activity Prompts</h2>
         <RandomWord />
         <RomancePrompt />
-        <button onClick={() => handlePrompt()}>Generate Prompt</button>
+        {/* <button onClick={() => handlePrompt()}>Generate Prompt</button> */}
         </div>
       </main>
     </>

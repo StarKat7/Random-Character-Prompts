@@ -13,7 +13,7 @@ export default function RandomWord() {
 
     return (
         <div className="component">
-            Random Word Component Here
+            Random Word Prompt
             <div>
                 <div>{oneRandomWord}</div>
                 <button onClick={() => handleOneWordPrompt()}>Single Word Prompt</button>
